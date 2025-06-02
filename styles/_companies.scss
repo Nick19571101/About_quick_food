@@ -1,0 +1,17 @@
+@use 'variables' as v;
+@use 'mixins' as *;
+@use 'placeholders';
+
+.companies {
+	padding-block: 3rem;
+	&__title {
+		font-family: v.$font-family;
+		font-weight: 500;
+		font-size: 1.31rem;
+		color: v.$color-dark;
+		padding-block-end: 2.8rem;
+	}
+}
+.logos {
+	@include d-flex(center, center, row, 7rem, 1.5rem, wrap);
+}

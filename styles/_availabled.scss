@@ -1,0 +1,16 @@
+@use 'variables' as v;
+@use 'mixins' as *;
+
+.availabled {
+	background-color: v.$color-bg;
+	padding-block: min(6.25rem, 10vw);
+	&__content {
+		@include d-flex(center, center, row, min(25rem, 25vw), 1rem, wrap);
+	}
+	&__title {
+		color: v.$color-white;
+		@media (max-width: 450px) {
+			font-size: 1.8rem;
+		}
+	}
+}

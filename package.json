@@ -1,0 +1,20 @@
+{
+	"name": "hungry-app",
+	"version": "1.0.0",
+	"description": "landing page",
+	"source": "index.html",
+	"scripts": {
+		"start:watch": "sass --style=expanded --watch styles:dist"
+	},
+	"author": "Nick",
+	"license": "ISC",
+	"main": "index.html",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Nick19571101/hungry-app.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Nick19571101/hungry-app/issues"
+	},
+	"homepage": "https://github.com/Nick19571101/hungry-app#readme"
+}

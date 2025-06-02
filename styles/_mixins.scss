@@ -1,0 +1,16 @@
+@mixin d-flex(
+	$justify: space-between,
+	$align: center,
+	$dir: row,
+	$col-gap: 0,
+	$row-gap: 0,
+	$wrap: nowrap
+) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $dir;
+	column-gap: $col-gap;
+	row-gap: $row-gap;
+	flex-wrap: $wrap;
+}

@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+%hover-dark {
+	&:hover {
+		color: $color-yel;
+		text-decoration: overline;
+	}
+}
+
+%fullsize {
+	width: 100%;
+	height: 100%;
+}

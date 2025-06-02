@@ -1,0 +1,37 @@
+@use 'variables' as v;
+@use 'mixins' as *;
+@use 'placeholders';
+
+.testimonials {
+	padding-block: min(5rem, 8vw);
+	&__title {
+		text-align: center;
+		margin-block-end: min(5rem, 9vw);
+	}
+	&__cards {
+		@include d-flex(center, center, row, min(10rem, 7vw), 2rem, wrap);
+	}
+}
+.cards {
+	&__card {
+		max-width: 260px;
+	}
+}
+.card {
+	@include d-flex(center, center, column, 0, 1rem);
+	&__image img {
+		width: 100%;
+	}
+	&__name {
+		font-family: v.$font-family;
+		font-weight: 500;
+		font-size: 1.31rem;
+		color: v.$color-dark;
+	}
+	&__text {
+		line-height: 1.5;
+		text-align: justify;
+		color: v.$color-dark;
+		opacity: 0.7;
+	}
+}

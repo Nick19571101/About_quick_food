@@ -1,0 +1,105 @@
+@use 'variables' as v;
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*::before*::after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	min-width: 320px;
+	font-size: 100%;
+	scroll-behavior: smooth;
+	background-color: v.$color-white;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+	background-color: inherit;
+	border: unset;
+}
+
+button {
+	cursor: pointer;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:300,regular,500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:regular,500,700&display=swap);
+body {
+	line-height: 1.5;
+	font-family: 'Lato', sans-serif;
+}
+
+[class*='__container'] {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-inline: 1rem;
+}
+
+.wrapper {
+	max-width: 100rem;
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-inline: auto;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+.btn {
+	border-radius: 0.62rem;
+	padding: 0.94rem 1.88rem;
+	font-size: 1.12rem;
+	color: v.$color-dark;
+	background-color: v.$color-white;
+}
+.title {
+	font-family: v.$font-family;
+	font-weight: 700;
+	font-size: 2.38rem;
+	color: v.$color-dark;
+}

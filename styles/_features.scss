@@ -1,0 +1,81 @@
+@use 'variables' as v;
+@use 'mixins' as *;
+@use 'placeholders';
+
+.features {
+	padding-block-start: 1rem;
+	padding-block-end: min(5rem, 7vw);
+}
+.contents {
+	@include d-flex(space-between, center, row, min(10rem, 7vw));
+	@media (max-width: 768px) {
+		flex-direction: column;
+		row-gap: 1rem;
+	}
+	&__image {
+		max-width: 344px;
+		width: 100%;
+		height: auto;
+		flex: 0 1 45%;
+	}
+	&__main-features {
+		flex: 0 1 40%;
+	}
+}
+.main-features {
+	&__title {
+		margin-block-end: min(4rem, 5vw);
+	}
+	&__item:not(:last-child) {
+		margin-block-end: 3rem;
+	}
+}
+.item {
+	max-width: 560px;
+	position: relative;
+	@media (max-width: 768px) {
+		margin-inline-start: 90px;
+	}
+	&__title {
+		font-family: v.$font-family;
+		font-weight: 500;
+		font-size: 1.31rem;
+		color: v.$color-dark;
+		margin-block-end: 1.25rem;
+	}
+	&__text {
+		font-family: v.$font-family;
+		line-height: 1.5;
+		color: v.$color-dark;
+	}
+}
+.item--first::before {
+	content: '';
+	position: absolute;
+	top: 37%;
+	left: -100px;
+	width: 100%;
+	height: 100%;
+	background: url('../images/svg-icon/fea1.svg') no-repeat;
+	z-index: -1;
+}
+.item--sec::before {
+	content: '';
+	position: absolute;
+	top: 37%;
+	left: -100px;
+	width: 100%;
+	height: 100%;
+	background: url('../images/svg-icon/fea2.svg') no-repeat;
+	z-index: -1;
+}
+.item--third::before {
+	content: '';
+	position: absolute;
+	top: 37%;
+	left: -100px;
+	width: 100%;
+	height: 100%;
+	background: url('../images/svg-icon/fea3.svg') no-repeat;
+	z-index: -1;
+}
