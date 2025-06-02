@@ -1,0 +1,43 @@
+@use 'variables' as v;
+@use 'mixins' as *;
+@use 'placeholders';
+
+.blog {
+	padding-block: min(7.5rem, 10vw);
+}
+.content-blog {
+	&__title {
+		text-align: center;
+		margin-block-end: min(3.75rem, 3.4vw);
+	}
+	&__items {
+		@include d-flex(center, center, row, min(2rem, 5vw), 3rem, wrap);
+	}
+}
+.item-content-blog {
+	max-width: 360px;
+	&__image img {
+		width: 100%;
+		margin-block-end: 1.5rem;
+	}
+	&__title {
+		font-family: v.$font-family;
+		font-weight: 600;
+		font-size: 1.75rem;
+		color: v.$color-dark;
+		margin-block-end: 1rem;
+	}
+	&__text {
+		line-height: 1.5;
+		color: #6d7073;
+		opacity: 0.7;
+		margin-block-end: 1rem;
+	}
+	&__link {
+		font-family: v.$font-family;
+		font-weight: 600;
+		font-size: 1.12rem;
+		line-height: 1.5;
+		color: v.$color-bg;
+	}
+}
