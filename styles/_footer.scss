@@ -1,0 +1,93 @@
+@use 'variables' as v;
+@use 'mixins' as *;
+@use 'placeholders';
+
+.footer {
+	background-color: v.$color-dark-light;
+	color: v.$color-white;
+	&__body {
+		padding-block-start: min(7rem, 10vw);
+		padding-block-end: min(5rem, 9vw);
+	}
+}
+.body-footer {
+	@include d-flex(center, flex-start, row, min(4rem, 5vw), 1rem);
+	@media (max-width: 768px) {
+		@include d-flex(center, center, column, 0, 2rem);
+	}
+	&__logo {
+		font-family: v.$font-family;
+		font-weight: 700;
+		font-size: 1.94rem;
+		margin-block-end: 1.5rem;
+	}
+	&__text {
+		font-family: v.$font-family;
+		line-height: 1.5;
+		opacity: 0.7;
+		max-width: 20rem;
+	}
+}
+.items-body-footer {
+	@include d-flex(center, center, row, min(4rem, 5vw), 1rem);
+}
+.item-body-footer {
+	&__title {
+		font-family: v.$font-family;
+		font-weight: 500;
+		font-size: 1.31rem;
+		margin-block-end: 1.5rem;
+	}
+	&__link {
+		margin-block-end: 1rem;
+		white-space: nowrap;
+		transition: all 0.52s ease;
+	}
+	&__link a {
+		font-family: v.$font-family;
+		line-height: 1.5;
+		color: v.$color-white;
+		opacity: 0.7;
+		transition: all 0.52s ease;
+		@extend %hover-dark;
+	}
+}
+.feedback-body-footer {
+	&__label {
+		font-family: v.$font-family;
+		font-weight: 500;
+		font-size: 1.31rem;
+		display: block;
+		margin-block-end: 1rem;
+	}
+	&__block {
+		@include d-flex(center, center, row);
+		margin-block-end: 2rem;
+	}
+	&__input {
+		display: block;
+		padding-inline-start: 0.62rem;
+		background-color: v.$color-white;
+		height: 2.56rem;
+	}
+	&__btn {
+		height: 2.56rem;
+		border-radius: unset;
+		background-color: v.$color-bg;
+		font-size: 0.88rem;
+		line-height: 1.5;
+		@include d-flex(center, center);
+		color: #fff;
+	}
+	&__link {
+		margin-block-end: 1rem;
+	}
+	&__link a {
+		font-family: v.$font-family;
+		line-height: 1.5;
+		color: v.$color-white;
+		opacity: 0.7;
+		transition: all 0.52s ease;
+		@extend %hover-dark;
+	}
+}

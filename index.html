@@ -17,9 +17,9 @@
 					<a href="#" class="header__logo">Hungry</a>
 					<ul class="nav__list">
 						<li class="nav__item"><a href="#" class="nav__link nav__link_focus">Home</a></li>
-						<li class="nav__item"><a href="#" class="nav__link nav__link_focus">Features</a></li>
-						<li class="nav__item"><a href="#" class="nav__link nav__link_focus">Testimonial</a></li>
-						<li class="nav__item"><a href="#" class="nav__link nav__link_focus">Blog</a></li>
+						<li class="nav__item"><a href="#features" class="nav__link nav__link_focus">Features</a></li>
+						<li class="nav__item"><a href="#test" class="nav__link nav__link_focus">Testimonial</a></li>
+						<li class="nav__item"><a href="#blog" class="nav__link nav__link_focus">Blog</a></li>
 					</ul>
 					<button class="header__btn btn" aria-label="button download">Download Now</button>
 				</nav>
@@ -69,7 +69,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__features features">
+			<section class="page__features features" id="features">
 				<div class="features__container">
 					<div class="features__contents contents">
 						<div class="contents__image">
@@ -96,7 +96,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page_testimonials testimonials">
+			<section class="page_testimonials testimonials" id="test">
 				<div class="testimonials__container">
 					<div class="testimonials__content">
 						<h2 class="testimonials__title title">Testimonials</h2>
@@ -134,7 +134,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__blog blog">
+			<section class="page__blog blog" id="blog">
 				<div class="blog__container">
 					<div class="blog__content content-blog">
 						<div class="content-blog__title title">Update News</div>
@@ -172,7 +172,50 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer__container"></div>
+			<div class="footer__container">
+				<div class="footer__body body-footer">
+					<div class="body-footer__heading">
+						<div class="body-footer__logo">Hungry.</div>
+						<div class="body-footer__text">
+							<p>Food Delivery is a thriving business and there are many opportunities for this
+								Businesses as its Growing.</p>
+						</div>
+					</div>
+					<div class="body-footer__items items-body-footer">
+						<div class="items-body-footer__item item-body-footer">
+							<h6 class="item-body-footer__title">Support</h6>
+							<ul class="item-body-footer__links">
+								<li class="item-body-footer__link"><a href="#">Privacy & Policy</a></li>
+								<li class="item-body-footer__link"><a href="#">Terms & Condition</a></li>
+								<li class="item-body-footer__link"><a href="#">Guidelines</a></li>
+								<li class="item-body-footer__link"><a href="#">Help</a></li>
+							</ul>
+						</div>
+						<div class="items-body-footer__item item-body-footer">
+							<h6 class="item-body-footer__title">Usefull Links</h6>
+							<ul class="item-body-footer__links">
+								<li class="item-body-footer__link"><a href="#">Privacy & Policy</a></li>
+								<li class="item-body-footer__link"><a href="#">Terms & Condition</a></li>
+								<li class="item-body-footer__link"><a href="#">Guidelines</a></li>
+								<li class="item-body-footer__link"><a href="#">Help</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="body-footer__feedback feedback-body-footer">
+						<form action="#" class="feedback-body-footer__form">
+							<label for="email" class="feedback-body-footer__label">News Letters</label>
+							<div class="feedback-body-footer__block">
+								<input type="email" class="feedback-body-footer__input" name="email" placeholder="Email" required>
+								<button class="feedback-body-footer__btn btn">Subscribe</button>
+							</div>
+						</form>
+						<ul class="feedback-body-footer__links">
+							<li class="feedback-body-footer__link"><a href="#">Guidelines</a></li>
+							<li class="feedback-body-footer__link"><a href="#">Help</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 	<script src="js/script.js"></script>
